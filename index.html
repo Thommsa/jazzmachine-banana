@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>East Sound Jazz Machine · jazzmachine.banana.bingo</title>
+<style>
+:root{--cream:#F3EEE3;--ink:#141210;--red:#B42318;--muted:#6E675C;--line:#C8BFB0;--box:#E7DFD1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{color:var(--red)}
+header{border-bottom:1px solid var(--line);padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.brand{font-family:system-ui,sans-serif;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:.95rem}
+nav a{margin-left:1rem;font-family:system-ui,sans-serif;font-size:.85rem;text-decoration:none;color:var(--ink)}
+.wrap{max-width:920px;margin:0 auto;padding:2rem 1.25rem 4rem}
+.badge{display:inline-block;background:var(--ink);color:var(--cream);font-family:system-ui,sans-serif;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;margin-bottom:1rem}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin-bottom:.5rem}
+.meta{font-family:system-ui,sans-serif;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem}
+article p{margin-bottom:1rem;font-size:1.05rem}
+blockquote{border-left:3px solid var(--red);padding:.5rem 0 .5rem 1rem;margin:1.25rem 0;font-style:italic}
+.logo-row{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin:2rem 0;padding:1.25rem;background:var(--box);border-radius:12px}
+.domain strong{color:var(--ink);font-size:1rem}
+hr{border:none;border-top:1px solid var(--line);margin:2.5rem 0}
+h2{font-size:1.4rem;margin-bottom:.35rem}
+.shop-intro{color:var(--muted);font-family:system-ui,sans-serif;font-size:.9rem;margin-bottom:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.card .thumb{aspect-ratio:1;background:var(--cream);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.card h3{font-size:1rem;font-family:system-ui,sans-serif}
+.card .price{font-family:system-ui,sans-serif;font-weight:700;color:var(--red)}
+.card button{font-family:system-ui,sans-serif;border:1px solid var(--ink);background:var(--ink);color:var(--cream);padding:.55rem .8rem;border-radius:6px;cursor:pointer;font-size:.85rem}
+footer{border-top:1px solid var(--line);padding:1.5rem;text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:var(--muted)}
+.disclaimer{background:#fff3cd;border:1px solid #e6d28a;border-radius:8px;padding:.85rem 1rem;font-family:system-ui,sans-serif;font-size:.8rem;margin-top:2rem;color:#5c4a00}
+#toast{position:fixed;bottom:1.25rem;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--cream);padding:.7rem 1.1rem;border-radius:8px;font-family:system-ui,sans-serif;font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .25s;z-index:20}
+#toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">East Sound Jazz Machine</div>
+  <nav><a href="#nieuws">Nieuws</a><a href="#shop">Shop</a><a href="#domain">Domain</a></nav>
+</header>
+<main class="wrap">
+  <div class="badge">Parodie · niet echt nieuws</div>
+  <h1 id="nieuws">New Cool Collective heet voortaan East Hot Collective</h1>
+  <p class="meta">Jazznieuws · 21 oktober 2026 · Amsterdam / Enschede · <em>satire</em></p>
+  <div class="logo-row">
+    <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="94" fill="#F3EEE3" stroke="#141210" stroke-width="6"/>
+      <text x="100" y="28" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="800">EAST SOUND JAZZ</text>
+      <text x="100" y="188" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="900">MACHINE</text>
+      <ellipse cx="88" cy="78" rx="28" ry="24" fill="#F3EEE3" stroke="#141210" stroke-width="2.5"/>
+      <circle cx="82" cy="74" r="3.5" fill="#141210"/>
+      <ellipse cx="118" cy="100" rx="42" ry="26" fill="#B42318" stroke="#141210" stroke-width="2"/>
+      <path d="M155 100 l22 -14 v28 z" fill="#B42318" stroke="#141210" stroke-width="2"/>
+      <g stroke="#141210" stroke-width="2.5" fill="none">
+        <path d="M95 124 v18 M92 142 h8"/><path d="M108 126 v18 M105 144 h8"/>
+        <path d="M122 125 v18 M119 143 h8"/><path d="M136 124 v18 M133 142 h8"/>
+      </g>
+    </svg>
+    <div>
+      <div class="domain" id="domain"><strong>east.sound.jazzmachine.band</strong><br/>subdomain-formule · apex via penningmeester</div>
+      <p style="margin-top:.6rem;font-size:.95rem">Parade-pak. Rode haringstaart. Beentjes eronder. Geen tandwielen.</p>
+    </div>
+  </div>
+  <article>
+    <p><strong>AMSTERDAM</strong> — Na een intern overleg van bijna twaalf minuten heeft de Amsterdamse bigband New Cool Collective besloten de naam te wijzigen in <strong>East Hot Collective</strong>. De aanleiding: de Enschedese formatie <strong>East Sound Jazz Machine</strong>.</p>
+    <blockquote>“Cool was gisteren. East is vandaag. En hot is wat er overblijft als je te lang op de bus naar Twente hebt gezeten.”</blockquote>
+    <p>De naamswijziging is volgens de band geen concurrentiestrijd, maar een “natuurlijke evolutie”. East Sound Jazz Machine gaf hen “de doorslag — of in ieder geval de hashtag”.</p>
+    <p>Of er een logo met parade-draak en rode haringstaart komt: “Dat is hun ding. Wij blijven bij hoeden. Maar de site wordt <code>easthot.collective.band</code>.”</p>
+    <p>Voicemail ESJM: <em>“U spreekt met de machine. Laat een bericht achter na de rode haring.”</em></p>
+  </article>
+  <hr/>
+  <h2 id="shop">Merch-machine (ook nep)</h2>
+  <p class="shop-intro">Prijzen zijn punchlines. Niets wordt verzonden.</p>
+  <div class="grid">
+    <div class="card"><div class="thumb"><svg viewBox="0 0 100 100" width="80"><ellipse cx="55" cy="52" rx="22" ry="14" fill="#B42318"/><circle cx="38" cy="42" r="12" fill="#F3EEE3" stroke="#141210"/></svg></div><h3>Parade-draak patch</h3><div class="price">€12,– of één rode haring</div><button type="button" onclick="toast('Bestelling geweigerd. De machine is bezet.')">In winkelwagen</button></div>
+    <div class="card"><div class="thumb"><svg viewBox="0 0 100 100" width="80"><rect x="15" y="25" width="70" height="50" rx="6" fill="#141210"/><text x="50" y="55" text-anchor="middle" fill="#F3EEE3" font-size="11" font-weight="700">ESJM</text></svg></div><h3>MACHINE shirt</h3><div class="price">€29,– · maat: bigband</div><button type="button" onclick="toast('Je zit al in het parade-pak.')">In winkelwagen</button></div>
+    <div class="card"><div class="thumb"><svg viewBox="0 0 100 100" width="80"><path d="M20 50 Q50 10 80 50 Q50 90 20 50" fill="#B42318" stroke="#141210"/></svg></div><h3>Rode-haring sticker</h3><div class="price">€3,– · geurt niet</div><button type="button" onclick="toast('Toegevoegd aan je denkbeeldige setlist.')">In winkelwagen</button></div>
+    <div class="card"><div class="thumb"><svg viewBox="0 0 100 100" width="80"><text x="50" y="48" text-anchor="middle" font-size="8" font-weight="800">EAST SOUND</text><text x="50" y="62" text-anchor="middle" font-size="8" font-weight="800">JAZZ MACHINE</text></svg></div><h3>Domain-claim kit</h3><div class="price">€27,– · voor de penningmeester</div><button type="button" onclick="toast('Doorsturen naar penningmeester… wacht op bandbesluit.')">In winkelwagen</button></div>
+  </div>
+  <div class="disclaimer">Satire op <strong>jazzmachine.banana.bingo</strong>. New Cool Collective heet gewoon New Cool Collective. Geen echte webshop. <strong>east.sound.jazzmachine.band</strong> is een URL-formule.</div>
+</main>
+<footer>East Sound Jazz Machine · Twente · banana.bingo-hoek</footer>
+<div id="toast"></div>
+<script>function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(window.__tt);window.__tt=setTimeout(function(){t.classList.remove('show')},2600)}</script>
+</body>
+</html>
