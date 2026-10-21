@@ -4,97 +4,79 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta name="theme-color" content="#F5EDE0"/>
-<title>East Sound Jazz Machine — shop</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<title>East Sound Jazz Machine — merch</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet"/>
 <style>
-:root{
-  --cream:#F5EDE0; --ink:#141210; --banana:#F5C518; --bruin:#6B5A45;
-  --red:#B42318; --card:#FFF9F0; --ripe:#F2D9A0;
-}
+:root{--cream:#F5EDE0;--ink:#141210;--banana:#F5C518;--bruin:#6B5A45;--red:#B42318;--card:#FFF9F0;--ripe:#F2D9A0}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--cream);color:var(--ink);font-family:Archivo,system-ui,sans-serif}
 a{color:inherit}
-.skip{position:absolute;left:-999px}
 .marquee{overflow:hidden;background:var(--ink);color:var(--banana);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;padding:10px 0;border-bottom:3px solid var(--ink)}
 .marquee-track{display:flex;width:max-content;animation:scroll 28s linear infinite}
 .marquee-track span{white-space:nowrap;padding:0 1.5rem}
 @keyframes scroll{to{transform:translateX(-50%)}}
 header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:3px solid var(--ink);gap:12px;flex-wrap:wrap}
-.brand{font-family:Anton,sans-serif;font-size:1.35rem;letter-spacing:.02em;text-transform:uppercase}
+.brand{font-family:Anton,sans-serif;font-size:1.35rem;text-transform:uppercase}
 nav{display:flex;gap:14px;font-weight:800;font-size:.9rem;text-transform:uppercase}
 nav a{text-decoration:none}
-nav a:hover{color:var(--red)}
-.cart-btn{font-family:IBM Plex Mono,monospace;font-weight:600;background:var(--banana);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:8px 12px;cursor:pointer;font-size:.85rem}
-.cart-btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.cart-btn{font-family:IBM Plex Mono,monospace;font-weight:600;background:var(--banana);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:8px 12px;cursor:pointer}
 .wrap{max-width:980px;margin:0 auto;padding:22px 18px 80px}
 .kicker{display:inline-block;background:var(--ink);color:var(--banana);font-weight:900;font-size:.9rem;padding:6px 10px;transform:rotate(-2deg);margin-bottom:14px}
-h1{font-family:Anton,sans-serif;font-size:clamp(2.4rem,10vw,4.2rem);line-height:.92;text-transform:uppercase;letter-spacing:-.02em;max-width:12ch;margin-bottom:12px}
-.lede{font-weight:700;color:var(--bruin);max-width:36ch;font-size:1.05rem;margin-bottom:22px}
+h1{font-family:Anton,sans-serif;font-size:clamp(2.4rem,10vw,4.2rem);line-height:.92;text-transform:uppercase;max-width:14ch;margin-bottom:12px}
+.lede{font-weight:700;color:var(--bruin);max-width:42ch;margin-bottom:22px}
 .stripe{background:var(--ink);color:var(--banana);font-weight:900;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;padding:10px 14px;margin:0 -18px 26px;text-align:center}
 .news{background:var(--card);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:18px;margin-bottom:28px}
 .news h2{font-family:Anton,sans-serif;font-size:1.6rem;text-transform:uppercase;margin-bottom:8px}
 .news .meta{font-family:IBM Plex Mono,monospace;font-size:.75rem;color:var(--bruin);margin-bottom:12px}
 .news p{margin-bottom:10px;line-height:1.5}
-.news blockquote{border-left:4px solid var(--red);padding-left:12px;font-style:italic;margin:12px 0;color:#333}
-.logo-bar{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:18px 0;padding:14px;background:var(--ripe);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
-.logo-bar svg{flex-shrink:0}
-.logo-bar strong{font-family:IBM Plex Mono,monospace;font-size:.95rem}
-.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:8px 0 14px}
+.news blockquote{border-left:4px solid var(--red);padding-left:12px;font-style:italic;margin:12px 0}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin:8px 0 14px}
 .section-head h2{font-family:Anton,sans-serif;font-size:1.7rem;text-transform:uppercase}
 .section-head small{font-weight:700;color:var(--bruin)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
 .card{background:var(--card);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);display:flex;flex-direction:column}
-.card:nth-child(3n+2){background:var(--ripe)}
-.thumb{aspect-ratio:1;border-bottom:3px solid var(--ink);display:flex;align-items:center;justify-content:center;background:var(--cream);padding:12px}
+.card:nth-child(2n){background:var(--ripe)}
+.thumb{aspect-ratio:1;border-bottom:3px solid var(--ink);background:#fff;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:contain;display:block}
 .card .body{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}
-.card h3{font-family:Anton,sans-serif;font-size:1.25rem;text-transform:uppercase;letter-spacing:.01em}
-.blurb{font-size:.9rem;color:var(--bruin);font-weight:600;line-height:1.35}
-.price{font-family:IBM Plex Mono,monospace;font-weight:600;font-size:1rem}
-.card button{margin-top:auto;font-family:Archivo,sans-serif;font-weight:800;text-transform:uppercase;border:3px solid var(--ink);background:var(--ink);color:var(--banana);padding:10px;cursor:pointer;font-size:.85rem}
+.card h3{font-family:Anton,sans-serif;font-size:1.2rem;text-transform:uppercase}
+.blurb{font-size:.9rem;color:var(--bruin);font-weight:600}
+.price{font-family:IBM Plex Mono,monospace;font-weight:600}
+.card button{margin-top:auto;font-weight:800;text-transform:uppercase;border:3px solid var(--ink);background:var(--ink);color:var(--banana);padding:10px;cursor:pointer}
 .card button:hover{background:var(--red);border-color:var(--red);color:#fff}
 .disclaimer{margin-top:28px;background:var(--banana);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:14px;font-weight:700;font-size:.9rem}
 footer{margin-top:32px;padding:16px 18px;background:var(--ink);color:var(--banana);font-size:.8rem;font-weight:700;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 footer a{color:var(--banana)}
 #drawer{position:fixed;inset:0;background:rgba(20,18,16,.45);display:none;z-index:40;justify-content:flex-end}
 #drawer.open{display:flex}
-.panel{width:min(360px,100%);background:var(--cream);border-left:3px solid var(--ink);padding:18px;overflow:auto}
+.panel{width:min(380px,100%);background:var(--cream);border-left:3px solid var(--ink);padding:18px;overflow:auto}
 .panel h2{font-family:Anton,sans-serif;text-transform:uppercase;margin-bottom:12px}
-.panel li{list-style:none;border:2px solid var(--ink);padding:10px;margin-bottom:8px;background:var(--card);display:flex;justify-content:space-between;gap:8px;font-weight:700}
+.panel li{list-style:none;border:2px solid var(--ink);padding:10px;margin-bottom:8px;background:var(--card);display:flex;justify-content:space-between;gap:8px;font-weight:700;align-items:center}
+.panel li img{width:48px;height:48px;object-fit:contain;border:2px solid var(--ink);background:#fff}
 .panel .empty{color:var(--bruin);font-weight:700;margin:12px 0}
 .panel .total{font-family:IBM Plex Mono,monospace;font-weight:600;margin:14px 0}
 .panel .actions{display:flex;gap:8px;flex-wrap:wrap}
 .panel button{font-weight:800;text-transform:uppercase;border:3px solid var(--ink);padding:10px 12px;cursor:pointer;background:var(--ink);color:var(--banana)}
 .panel button.ghost{background:var(--cream);color:var(--ink)}
-#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--banana);padding:10px 14px;border:3px solid var(--banana);font-weight:800;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw;text-align:center}
+#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--banana);padding:10px 14px;border:3px solid var(--banana);font-weight:800;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw;text-align:center}
 #toast.show{opacity:1}
 </style>
 </head>
 <body>
-<a class="skip" href="#shop">Skip to shop</a>
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>NOTHING SHIPS · RED HERRING IN STOCK · PARADE-PAK SOLD OUT OF LEGS · EAST SOUND JAZZ MACHINE · COOL WAS GISTEREN ·</span>
-    <span>NOTHING SHIPS · RED HERRING IN STOCK · PARADE-PAK SOLD OUT OF LEGS · EAST SOUND JAZZ MACHINE · COOL WAS GISTEREN ·</span>
-  </div>
-</div>
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+<span>RENDERED LOGOS FOR SALE · NOTHING SHIPS · PARADE-PAK MERCH · RED HERRING PRINTS · EAST SOUND JAZZ MACHINE · </span>
+<span>RENDERED LOGOS FOR SALE · NOTHING SHIPS · PARADE-PAK MERCH · RED HERRING PRINTS · EAST SOUND JAZZ MACHINE · </span>
+</div></div>
 <header>
   <div class="brand">East Sound Jazz Machine</div>
-  <nav>
-    <a href="#nieuws">Nieuws</a>
-    <a href="#shop">Shop</a>
-  </nav>
+  <nav><a href="#nieuws">Nieuws</a><a href="#shop">Shop</a></nav>
   <button type="button" class="cart-btn" id="cartOpen">Cart (<span id="cartCount">0</span>)</button>
 </header>
-
 <main class="wrap">
-  <p class="kicker">Official unofficial merch</p>
-  <h1>The machine is open</h1>
-  <p class="lede">Twente bigband storefront. Prices are punchlines. Checkout does not ship — Brickstagram rules.</p>
-
-  <div class="stripe">jazzmachine.banana.bingo · east.sound.jazzmachine.band · beentjes included</div>
-
+  <p class="kicker">Band merchandise</p>
+  <h1>Koop de gerenderde logo’s</h1>
+  <p class="lede">De echte parade-draak renders met rode haringstaart en beentjes. Cart werkt. Verzending niet.</p>
+  <div class="stripe">jazzmachine.banana.bingo · east.sound.jazzmachine.band · official unofficial merch</div>
   <section class="news" id="nieuws">
     <h2>New Cool Collective → East Hot Collective</h2>
     <p class="meta">Parodie · 21 okt 2026 · Amsterdam / Enschede</p>
@@ -102,74 +84,32 @@ footer a{color:var(--banana)}
     <blockquote>“Cool was gisteren. East is vandaag. En hot is wat er overblijft als je te lang op de bus naar Twente hebt gezeten.”</blockquote>
     <p>ESJM-voicemail: <em>U spreekt met de machine. Laat een bericht achter na de rode haring.</em></p>
   </section>
-
-  <div class="logo-bar">
-    <svg width="100" height="100" viewBox="0 0 200 200" aria-hidden="true">
-      <circle cx="100" cy="100" r="94" fill="#F5EDE0" stroke="#141210" stroke-width="6"/>
-      <text x="100" y="28" text-anchor="middle" font-family="Anton,sans-serif" font-size="12">EAST SOUND JAZZ</text>
-      <text x="100" y="188" text-anchor="middle" font-family="Anton,sans-serif" font-size="18">MACHINE</text>
-      <ellipse cx="88" cy="78" rx="28" ry="24" fill="#F5EDE0" stroke="#141210" stroke-width="2.5"/>
-      <circle cx="82" cy="74" r="3.5" fill="#141210"/>
-      <ellipse cx="118" cy="100" rx="42" ry="26" fill="#B42318" stroke="#141210" stroke-width="2"/>
-      <path d="M155 100 l22 -14 v28 z" fill="#B42318" stroke="#141210" stroke-width="2"/>
-      <g stroke="#141210" stroke-width="2.5" fill="none">
-        <path d="M95 124 v18 M92 142 h8"/><path d="M108 126 v18 M105 144 h8"/>
-        <path d="M122 125 v18 M119 143 h8"/><path d="M136 124 v18 M133 142 h8"/>
-      </g>
-    </svg>
-    <div>
-      <strong>east.sound.jazzmachine.band</strong>
-      <p class="blurb" style="margin-top:6px">Parade-pak · rode haringstaart · beentjes · geen tandwielen</p>
-    </div>
-  </div>
-
-  <div class="section-head" id="shop">
-    <h2>Merch floor</h2>
-    <small>4 SKUs · 0 shipments</small>
-  </div>
+  <div class="section-head" id="shop"><h2>Logo merch</h2><small>4 prints · 0 shipments</small></div>
   <div class="grid" id="grid"></div>
-
-  <div class="disclaimer">Satire-shop à la Brickstagram. New Cool Collective heet gewoon New Cool Collective. Geen betaling, geen postbode, geen echte voorraad. banana.bingo-hoek.</div>
+  <div class="disclaimer">Satire-shop à la Brickstagram. Dit zijn de gerenderde logo’s. New Cool Collective heet gewoon New Cool Collective. Geen betaling, geen postbode.</div>
 </main>
-
 <footer>
   <span>East Sound Jazz Machine · Twente</span>
   <a href="https://brickstagram.banana.bingo">brickstagram →</a>
 </footer>
-
-<div id="drawer" role="dialog" aria-label="Cart">
-  <div class="panel">
-    <h2>Cart</h2>
-    <ul id="cartList"></ul>
-    <p class="empty" id="cartEmpty">Leeg. Net als onze verzendplanning.</p>
-    <p class="total" id="cartTotal" hidden></p>
-    <div class="actions">
-      <button type="button" id="checkout">Checkout (ship’t niet)</button>
-      <button type="button" class="ghost" id="cartClose">Sluit</button>
-    </div>
+<div id="drawer" role="dialog" aria-label="Cart"><div class="panel">
+  <h2>Cart</h2><ul id="cartList"></ul>
+  <p class="empty" id="cartEmpty">Leeg. Net als onze verzendplanning.</p>
+  <p class="total" id="cartTotal" hidden></p>
+  <div class="actions">
+    <button type="button" id="checkout">Checkout (ship’t niet)</button>
+    <button type="button" class="ghost" id="cartClose">Sluit</button>
   </div>
-</div>
+</div></div>
 <div id="toast" role="status"></div>
-
+<script src="/products.js"></script>
 <script>
-const products = [
-  { id:'patch', name:'Parade-draak patch', blurb:'Beentjes optioneel. Rode haringstandaard.', price:12, unit:'€12 of 1 haring' },
-  { id:'shirt', name:'MACHINE shirt', blurb:'Maat: bigband. Wasvoorschrift: swing.', price:29, unit:'€29' },
-  { id:'sticker', name:'Rode-haring sticker', blurb:'Geurt niet. Lijmt wel op trompetkoffer.', price:3, unit:'€3' },
-  { id:'domain', name:'Domain-claim kit', blurb:'Alleen voor de penningmeester. Inhoud: één URL-formule.', price:27, unit:'€27' }
-];
-
+const products = window.ESJM_PRODUCTS;
 const cart = new Map();
 const grid = document.getElementById('grid');
 const toastEl = document.getElementById('toast');
-
 function money(n){ return '€' + n + ',–'; }
-function toast(msg){
-  toastEl.textContent = msg;
-  toastEl.classList.add('show');
-  clearTimeout(window.__tt);
-  window.__tt = setTimeout(() => toastEl.classList.remove('show'), 2400);
-}
+function toast(msg){ toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(window.__tt); window.__tt = setTimeout(() => toastEl.classList.remove('show'), 2400); }
 function renderCart(){
   const list = document.getElementById('cartList');
   const empty = document.getElementById('cartEmpty');
@@ -182,7 +122,7 @@ function renderCart(){
     if(!p) return;
     n += qty; sum += qty * p.price;
     const li = document.createElement('li');
-    li.innerHTML = '<span>' + p.name + ' ×' + qty + '</span><span>' + money(p.price * qty) + '</span>';
+    li.innerHTML = '<span style="display:flex;gap:8px;align-items:center"><img src="'+p.img+'" alt=""/><span>'+p.name+' ×'+qty+'</span></span><span>'+money(p.price*qty)+'</span>';
     list.appendChild(li);
   });
   count.textContent = n;
@@ -194,29 +134,20 @@ function add(id){
   cart.set(id, (cart.get(id) || 0) + 1);
   renderCart();
   const p = products.find(x => x.id === id);
-  toast((p ? p.name : 'Item') + ' in de cart. Ship’t nog steeds niet.');
+  toast((p ? p.name : 'Print') + ' in de cart. Ship’t nog steeds niet.');
 }
-
 products.forEach(p => {
   const card = document.createElement('article');
   card.className = 'card';
-  card.innerHTML =
-    '<div class="thumb"><svg viewBox="0 0 120 120" width="88" height="88">' +
-    (p.id==='patch' ? '<ellipse cx="70" cy="62" rx="28" ry="16" fill="#B42318"/><circle cx="48" cy="48" r="16" fill="#F5EDE0" stroke="#141210" stroke-width="3"/><circle cx="44" cy="46" r="3" fill="#141210"/><path d="M40 82v14M55 82v14M70 82v14M85 82v14" stroke="#141210" stroke-width="3"/>' :
-     p.id==='shirt' ? '<rect x="20" y="30" width="80" height="55" rx="6" fill="#141210"/><text x="60" y="64" text-anchor="middle" fill="#F5C518" font-family="Anton,sans-serif" font-size="16">ESJM</text>' :
-     p.id==='sticker' ? '<path d="M25 60 Q60 15 95 60 Q60 105 25 60" fill="#B42318" stroke="#141210" stroke-width="3"/>' :
-     '<text x="60" y="52" text-anchor="middle" font-family="Anton,sans-serif" font-size="11">EAST SOUND</text><text x="60" y="70" text-anchor="middle" font-family="Anton,sans-serif" font-size="11">JAZZ MACHINE</text>') +
-    '</svg></div><div class="body"><h3>' + p.name + '</h3><p class="blurb">' + p.blurb + '</p><p class="price">' + p.unit + '</p>' +
-    '<button type="button" data-id="' + p.id + '">Add to cart</button></div>';
+  card.innerHTML = '<div class="thumb"><img src="'+p.img+'" alt="'+p.name+'"/></div><div class="body"><h3>'+p.name+'</h3><p class="blurb">'+p.blurb+'</p><p class="price">'+p.unit+'</p><button type="button">Add to cart</button></div>';
   card.querySelector('button').onclick = () => add(p.id);
   grid.appendChild(card);
 });
-
 document.getElementById('cartOpen').onclick = () => document.getElementById('drawer').classList.add('open');
 document.getElementById('cartClose').onclick = () => document.getElementById('drawer').classList.remove('open');
 document.getElementById('drawer').onclick = (e) => { if(e.target.id==='drawer') e.currentTarget.classList.remove('open'); };
 document.getElementById('checkout').onclick = () => {
-  if(cart.size === 0){ toast('Cart leeg. Koop eerst een denkbeeldige haring.'); return; }
+  if(cart.size === 0){ toast('Cart leeg. Kies eerst een logo-print.'); return; }
   toast('Checkout geweigerd. De postbode speelt bass.');
   cart.clear(); renderCart();
 };
