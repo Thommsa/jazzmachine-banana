@@ -10,7 +10,6 @@
 :root{--cream:#F5EDE0;--ink:#141210;--banana:#F5C518;--bruin:#6B5A45;--red:#B42318;--card:#FFF9F0;--ripe:#F2D9A0}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--cream);color:var(--ink);font-family:Archivo,system-ui,sans-serif}
-a{color:inherit}
 .marquee{overflow:hidden;background:var(--ink);color:var(--banana);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;padding:10px 0;border-bottom:3px solid var(--ink)}
 .marquee-track{display:flex;width:max-content;animation:scroll 28s linear infinite}
 .marquee-track span{white-space:nowrap;padding:0 1.5rem}
@@ -18,7 +17,7 @@ a{color:inherit}
 header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:3px solid var(--ink);gap:12px;flex-wrap:wrap}
 .brand{font-family:Anton,sans-serif;font-size:1.35rem;text-transform:uppercase}
 nav{display:flex;gap:14px;font-weight:800;font-size:.9rem;text-transform:uppercase}
-nav a{text-decoration:none}
+nav a{text-decoration:none;color:inherit}
 .cart-btn{font-family:IBM Plex Mono,monospace;font-weight:600;background:var(--banana);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:8px 12px;cursor:pointer}
 .wrap{max-width:980px;margin:0 auto;padding:22px 18px 80px}
 .kicker{display:inline-block;background:var(--ink);color:var(--banana);font-weight:900;font-size:.9rem;padding:6px 10px;transform:rotate(-2deg);margin-bottom:14px}
@@ -102,6 +101,10 @@ footer a{color:var(--banana)}
   </div>
 </div></div>
 <div id="toast" role="status"></div>
+<script src="/p0.js"></script>
+<script src="/p1.js"></script>
+<script src="/p2.js"></script>
+<script src="/p3.js"></script>
 <script src="/products.js"></script>
 <script>
 const products = window.ESJM_PRODUCTS;

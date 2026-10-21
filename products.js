@@ -1,1 +1,1 @@
-window.ESJM_PRODUCTS = []; // placeholder - will update
+window.ESJM_PRODUCTS=[window.ESJM_P0,window.ESJM_P1,window.ESJM_P2,window.ESJM_P3].filter(Boolean);
