@@ -1,0 +1,1 @@
+window.ESJM_PRODUCTS = []; // placeholder - will update
